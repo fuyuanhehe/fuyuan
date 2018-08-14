@@ -60,7 +60,7 @@ public class ProducerFallback implements FallbackProvider {
     public ClientHttpResponse fallbackResponse(Throwable cause) {
         if (cause != null && cause.getCause() != null) {
             String reason = cause.getCause().getMessage();
-            System.out.println(reason+"----------");
+            System.err.println(reason+"----------");
         }
         return fallbackResponse();
     }

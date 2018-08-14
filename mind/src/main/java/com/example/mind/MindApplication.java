@@ -19,4 +19,6 @@ public class MindApplication {
     public TokenFilter tokenFilter() {
     	return new TokenFilter();
     }
+    
+    // http://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx  通过网管访问提供者
 }
