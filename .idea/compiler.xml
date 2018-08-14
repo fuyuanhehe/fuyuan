@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config" />
+        <module name="consumer" />
+        <module name="demo" />
+        <module name="hystrix" />
+        <module name="log" />
+        <module name="mind" />
+        <module name="mo" />
+        <module name="procider" />
+        <module name="producer2" />
+        <module name="register" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qq" target="1.8" />
+      <module name="sr" target="1.8" />
+      <module name="sw" target="1.6" />
+      <module name="ww" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

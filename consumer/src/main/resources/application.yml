@@ -1,0 +1,24 @@
+# 设置项目的info信息
+info:
+  description: 消费者
+
+# 设置服务端口号
+server:
+  port: 9001 
+
+# 设置项目的名称，eureka会使用项目名称分组
+spring:
+  application:
+    #name: node01
+    name: spring-cloud-consumer
+    
+eureka:
+  client:
+    #fetch-registry: false # 开发使用单机模式，fetch-registry、register-with-eureka都为false
+    #register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+feign:
+   hystrix:
+     enabled: true       
