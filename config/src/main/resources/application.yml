@@ -13,10 +13,10 @@ spring:
           username:                                        # git仓库的账号
           password:                                    # git仓库的密码
   rabbitmq:
-    host: 127.0.0.1
+    host: localhost
     port: 5672
     username: fuyuan
-    password: 123456
+    password: fuyuan
 
 eureka:
   client:
