@@ -10,23 +10,28 @@
 
 
 	<modules>
-
+		<!-- 消费者2号 -->
 		<module>demo</module>
 
 		<module>procider</module>
-
+		<!-- 注册中心 -->
 		<module>register</module>
 
 		<module>consumer</module>
-		
+		<!--断熔 -->
 		<module>hystrix</module>
 
-		
+		<!--网管 -->
 		<module>mind</module>
+		<!--提供者2号 -->
 		<module>producer2</module>
+
 		<module>log</module>
+		<!--配置中心 -->
 		<module>config</module>
+		<!-- 配置客户端 -->
 		<module>mo</module>
+		<module>log</module>
 	</modules>
 
 	<properties>
@@ -50,13 +55,21 @@
 			<scope>test</scope>
 		</dependency>
 
-	<dependency>
+		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
 
 	</dependencies>
 
