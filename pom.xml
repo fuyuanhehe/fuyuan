@@ -12,26 +12,34 @@
 	<modules>
 		<!-- 消费者2号 -->
 		<module>demo</module>
-
+		<!--提供者1 -->
 		<module>procider</module>
+
+		<!--提供者2号 -->
+		<module>producer2</module>
+
 		<!-- 注册中心 -->
 		<module>register</module>
 
+             <!--消费-->
 		<module>consumer</module>
+
 		<!--断熔 -->
 		<module>hystrix</module>
 
 		<!--网管 -->
 		<module>mind</module>
-		<!--提供者2号 -->
-		<module>producer2</module>
 
 		<module>log</module>
 		<!--配置中心 -->
 		<module>config</module>
 		<!-- 配置客户端 -->
 		<module>mo</module>
+
 		<module>log</module>
+
+
+		<module>ribbon</module>
 	</modules>
 
 	<properties>

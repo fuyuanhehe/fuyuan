@@ -10,5 +10,5 @@ import com.example.consumer.server.HelloRemoteHystrix;
 public interface HelloRemote {
 	
     @RequestMapping(value = "/hello")
-    public String hello(@RequestParam(value = "name") String name);
+     String hello(@RequestParam(value = "name") String name);
 }
