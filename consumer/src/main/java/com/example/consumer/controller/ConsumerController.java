@@ -20,4 +20,10 @@ public class ConsumerController {
         return HelloRemote.hello(name);
     }
 
+/*    com.netflix.loadbalancer.RandomRule #配置规则 随机
+    com.netflix.loadbalancer.RoundRobinRule #配置规则 轮询
+    com.netflix.loadbalancer.RetryRule #配置规则 重试
+    com.netflix.loadbalancer.WeightedResponseTimeRule #配置规则 响应时间权重
+    com.netflix.loadbalancer.BestAvailableRule #配置规则 最空闲连接策略
+    */
 }
