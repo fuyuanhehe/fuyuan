@@ -115,4 +115,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
         security.checkTokenAccess("isAuthenticated()");
         security.tokenKeyAccess("isAuthenticated()");
     }
+
+
+
 }

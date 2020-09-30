@@ -1,6 +1,5 @@
 package kite.springcloud.oauth2.authserver.config;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -22,7 +21,6 @@ import java.util.List;
  * @author fengzheng 古时的风筝
  * @date 2019/3/30
  */
-@Slf4j
 @Component(value = "kiteUserDetailsService")
 public class KiteUserDetailsService implements UserDetailsService {
 

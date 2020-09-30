@@ -25,6 +25,7 @@ public class JwtTokenConfig {
     public JwtAccessTokenConverter jwtAccessTokenConverter() {
         JwtAccessTokenConverter accessTokenConverter = new JwtAccessTokenConverter();
         accessTokenConverter.setSigningKey("dev");
+        accessTokenConverter.setVerifierKey("dev");
         return accessTokenConverter;
     }
 
