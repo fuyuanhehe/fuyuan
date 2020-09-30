@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auth-connect" />
         <module name="config" />
         <module name="consumer" />
         <module name="demo" />
@@ -13,12 +14,17 @@
         <module name="log" />
         <module name="mind" />
         <module name="mo" />
+        <module name="oauth2-auth-server" />
+        <module name="oauth2-client-user-server" />
         <module name="procider" />
         <module name="producer2" />
         <module name="register" />
+        <module name="zipkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth" target="11" />
+      <module name="auth-connect" target="11" />
       <module name="qq" target="1.8" />
       <module name="sr" target="1.8" />
       <module name="sw" target="1.6" />

@@ -10,14 +10,24 @@ server:
 spring:
   application:
     name: spring-cloud-register
-    
+  profiles:
+    active: pro #spring boot允许你通过命名约定按照一定的格式(application-{profile}.properties)
+    #来定义多个配置文件，然后通过在application.properyies通过spring.profiles.active
+    #来具体激活一个或者多个配置文件，如果没有没有指定任何profile的配置文件的话，
+    #spring boot默认会启动application-default.properties。
 eureka:
   server:
     enable-self-preservation: false   # 关闭自动保护功能，开发的时候使用
-    eviction-interval-timer-in-ms: 15000 # 多少秒驱逐丢失的服务，正式环境请开启自我保护
+  #  eviction-interval-timer-in-ms: 15000 # 多少h秒驱逐丢失的服务，正式环境请开启自我保护
     wait-time-in-ms-when-sync-empty: 0
   client:
     fetch-registry: false # 开发使用单机模式，fetch-registry、register-with-eureka都为false
-    register-with-eureka: false
+  #  register-with-eureka: false #指示此实例是否应将其信息注册到eureka服务器以供其他人发现
     service-url:
       defaultZone: http://localhost:${server.port}/eureka/
+
+  instance:
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+
+

@@ -32,6 +32,9 @@
 		<!-- 配置客户端 -->
 		<module>mo</module>
 		<module>log</module>
+
+		<module>oauth2-auth-server</module>
+		<module>oauth2-client-user-server</module>
 	</modules>
 
 	<properties>

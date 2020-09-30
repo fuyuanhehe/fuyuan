@@ -21,4 +21,11 @@ eureka:
 
 feign:
    hystrix:
-     enabled: true       
+     enabled: true
+
+security:
+  oauth2:
+    resource:
+      id: spring-cloud-consumer
+      user-info-uri: http://localhost:10001/user
+      prefer-token-info: false
