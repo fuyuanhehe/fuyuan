@@ -11,7 +11,7 @@ spring:
         max-active: 8
         max-idle: 8
         min-idle: 0
-    timeout: 100ms
+    timeout: 5000
 server:
   port: 6101
   servlet:

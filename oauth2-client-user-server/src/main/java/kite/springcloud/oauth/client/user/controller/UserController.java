@@ -2,7 +2,6 @@ package kite.springcloud.oauth.client.user.controller;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
@@ -17,7 +16,6 @@ import java.nio.charset.StandardCharsets;
  * @author fengzheng
  * @date 2019/10/11
  */
-@Slf4j
 @RestController
 public class UserController {
 
