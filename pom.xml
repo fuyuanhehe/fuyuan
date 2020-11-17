@@ -41,8 +41,8 @@
 
 		<module>ribbon</module>
 
-		<module>oauth2-auth-server</module>
-		<module>oauth2-client-user-server</module>
+		<!--<module>oauth2-auth-server</module>
+		<module>oauth2-client-user-server</module>-->
 	</modules>
 
 	<properties>
