@@ -19,12 +19,15 @@
         <module name="procider" />
         <module name="producer2" />
         <module name="register" />
+        <module name="ribbon" />
         <module name="zipkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="auth" target="11" />
       <module name="auth-connect" target="11" />
+      <module name="oauth2-auth-server" target="1.8" />
+      <module name="oauth2-client-user-server" target="1.8" />
       <module name="qq" target="1.8" />
       <module name="sr" target="1.8" />
       <module name="sw" target="1.6" />

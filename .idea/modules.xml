@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/auth-connect/auth-connect.iml" filepath="$PROJECT_DIR$/auth-connect/auth-connect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2-auth-server/oauth2-auth-server.iml" filepath="$PROJECT_DIR$/oauth2-auth-server/oauth2-auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2-client-user-server/oauth2-client-user-server.iml" filepath="$PROJECT_DIR$/oauth2-client-user-server/oauth2-client-user-server.iml" />
     </modules>
   </component>
 </project>
